@@ -1,0 +1,12 @@
+#+SETUPFILE: ~/.emacs.d/org-templates/template.org
+
+* 创建typescript nextjs的项目
+#+begin_src shell
+  npx create-next-app@latest learning-react --typescript
+#+end_src
+* 文件结构说明
+#+begin_verse
+1. src/pages/_app.tsx: 这个文件是全局的，它会影响到所有页面。你可以在这个文件中引入全局样式，添加全局的页面布局，或者添加一些页面级的状态。如果你有一些需要在所有页面中共享的逻辑或状态，你应该在 _app.tsx 文件中处理
+2. pages/index.tsx: 根路由
+3. pages/xx.tsx: xx 路由。每个 pages 下的 tsx文件都会生成对应的路由
+#+end_verse
